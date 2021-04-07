@@ -12,3 +12,9 @@
 - If using Amazon Linux 2 with PHP, the environment variables are automatically pushed to the php request. So only the apache or nginx server has the environments. 
 - If we want to have the environments set for `web-app` we need to do this - [Link](https://aws.amazon.com/premiumsupport/knowledge-center/elastic-beanstalk-env-variables-linux2/)
 - Amazon linux 2 uses `composer.phar` instead of `composer` name :facepalm.
+
+# Docker issues
+
+## Mysql -- lower_case_table_name has different case sensitivity than original
+
+- ***07.04.2021***: Delete the mysql data volume from docker and the computer and rebuild mysql docker container (you can export the database and import it later instead of deleting it with the docker volum).
