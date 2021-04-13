@@ -18,3 +18,15 @@
 ## Mysql -- lower_case_table_name has different case sensitivity than original
 
 - ***07.04.2021***: Delete the mysql data volume from docker and the computer and rebuild mysql docker container (you can export the database and import it later instead of deleting it with the docker volum).
+
+# React Native Issues
+
+## Unable to upload file 
+
+- If you are using [React Native Debugger](https://github.com/jhen0409/react-native-debugger) and you have enabled network logs you must disabled the "Network" logging feature, because the library owner changes "FormData", "Blob" and "File" and makes uploading files impossible. 
+
+# Valet share issue
+
+## Bad Gateway 
+
+- Run `valet start` to start valet.
